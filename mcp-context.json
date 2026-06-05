@@ -1,0 +1,30 @@
+{
+  "name": "vscodeproject-global-context",
+  "root": "/home/dev27/Documentos/VsCodeProject",
+  "created_at": "2026-05-27",
+  "required_preflight": [
+    "global-mcp-agent/preflight.md",
+    "webtrans/ARCHITECTURE.md",
+    "webtrans/.github/agente-codex.md"
+  ],
+  "project_contexts": [
+    "projects/webtrans.md",
+    "projects/gw-base-webtrans.md",
+    "projects/gw-boleto.md",
+    "projects/gw-consulta-situacao.md",
+    "projects/gw-pagbem.md",
+    "projects/gw-api-relatorio.md"
+  ],
+  "shared_contexts": [
+    "preflight.md",
+    "rules.md",
+    "git-github-rules.md",
+    "workspace-context.md",
+    "libs.md"
+  ],
+  "mcp_server": {
+    "path": "mcp-server/server.js",
+    "transport": "stdio",
+    "mode": "read-only"
+  }
+}

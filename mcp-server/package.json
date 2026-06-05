@@ -1,0 +1,20 @@
+{
+  "name": "vscodeproject-context-mcp",
+  "version": "1.0.0",
+  "description": "MCP read-only para contexto global do workspace VsCodeProject.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "vscodeproject-context-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
