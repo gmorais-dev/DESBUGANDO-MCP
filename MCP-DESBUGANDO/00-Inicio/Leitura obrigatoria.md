@@ -25,6 +25,10 @@ Antes de qualquer acao no workspace, siga esta ordem:
    - [[GW API Relatorio]]
 7. Documentos obrigatorios do projeto alvo.
 
+Se o projeto alvo for [[Webtrans]] e a tarefa nomear uma rotina especifica,
+abrir em seguida [[Webtrans - Leitura por rotina]] para decidir quais `.md` do
+cofre `webtrans/Obsidian WebTrans` devem ser lidos antes da analise.
+
 ## Obrigatorio no workspace
 
 Sempre considerar como leitura obrigatoria antes de atuar em `/home/dev27/Documentos/VsCodeProject`:

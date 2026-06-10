@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "7f5abf6aebe0fe2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "494564f7ac7b90be",
+        "type": "tabs",
+        "dimension": 20.469798657718123,
+        "children": [
+          {
+            "id": "9a375edf5a6465bb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5e64fde67d58cbee",
+        "type": "tabs",
+        "dimension": 79.53020134228188,
+        "children": [
+          {
+            "id": "9e4d769204e5384d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-Mapas/Mapa mental.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mapa mental"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2ae67335112e6e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fffc8430f2fae5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e63cb66a93696cb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "b2008cc476eb7937",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "52f12b56cca9c1f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "ca17e47aa0498e33",
+    "type": "split",
+    "children": [
+      {
+        "id": "35be716aef55195f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55fb9c6435a0e53e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04-Mapas/Mapa mental.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Mapa mental"
+            }
+          },
+          {
+            "id": "8878cfac0ab500cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04-Mapas/Mapa mental.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Mapa mental"
+            }
+          },
+          {
+            "id": "1f377ce0c266700f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "5328d74bda806427",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "97ccc1edbabd09f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04-Mapas/Mapa mental.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Mapa mental"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "9e4d769204e5384d",
+  "lastOpenFiles": [
+    "00-Inicio/Leitura obrigatoria.md",
+    "04-Mapas/Mapa mental.md",
+    "04-Mapas/Mapa de conexoes.md",
+    "03-Projetos/GW API Relatorio.md",
+    "02-MCP/MCP vscodeproject-context.md",
+    "00-Inicio/Como usar este cofre.md",
+    "01-Regras/Git e GitHub.md",
+    "03-Projetos/GW PagBem.md",
+    "03-Projetos/GW Consulta Situacao.md",
+    "03-Projetos/GW Boleto.md",
+    "03-Projetos/GW Base Webtrans.md",
+    "03-Projetos/Webtrans.md",
+    "02-MCP/Resources e Tools.md",
+    "01-Regras/Libs complementares.md",
+    "01-Regras/Workspace VsCodeProject.md",
+    "01-Regras/Regras operacionais.md",
+    "01-Regras/Preflight obrigatorio.md",
+    "Bem-vindo.md",
+    "04-Mapas",
+    "03-Projetos",
+    "02-MCP",
+    "01-Regras",
+    "00-Inicio"
+  ]
+}

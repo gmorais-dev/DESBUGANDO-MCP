@@ -75,6 +75,9 @@ ou alterar PRs.
 - `context://project/gw-api-relatorio`
 - `context://webtrans/architecture`
 - `context://webtrans/agente-codex`
+- `context://webtrans/obsidian-vault`
+- `context://webtrans/obsidian-routine-routing`
+- `context://webtrans/obsidian-reasoning`
 
 ### Tools expostas
 

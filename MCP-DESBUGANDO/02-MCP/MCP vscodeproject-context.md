@@ -84,6 +84,9 @@ Depois do registro, confirme leitura de:
 - `context://global/preflight`
 - `context://global/rules`
 - `context://webtrans/architecture`
+- `context://webtrans/obsidian-vault`
+- `context://webtrans/obsidian-routine-routing`
+- `context://webtrans/obsidian-reasoning`
 
 E tools read-only:
 

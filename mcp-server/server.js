@@ -82,6 +82,18 @@ const RESOURCES = Object.freeze({
   "context://webtrans/agente-codex": {
     name: "Webtrans agente-codex.md",
     absoluteFile: path.join(WORKSPACE_ROOT, "webtrans/.github/agente-codex.md")
+  },
+  "context://webtrans/obsidian-vault": {
+    name: "Webtrans Obsidian Vault",
+    file: "projects/webtrans-obsidian-vault.md"
+  },
+  "context://webtrans/obsidian-routine-routing": {
+    name: "Webtrans Obsidian Routine Routing",
+    file: "projects/webtrans-obsidian-routine-routing.md"
+  },
+  "context://webtrans/obsidian-reasoning": {
+    name: "Webtrans Obsidian Reasoning Strategy",
+    file: "projects/webtrans-obsidian-reasoning.md"
   }
 });
 

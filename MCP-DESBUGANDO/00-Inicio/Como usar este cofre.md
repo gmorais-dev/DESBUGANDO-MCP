@@ -19,6 +19,10 @@ Use este cofre como mapa operacional do workspace. Ele nao substitui os document
 4. Se envolver biblioteca ou JAR, abra [[Libs complementares]].
 5. Escolha a nota do projeto em [[Workspace VsCodeProject]].
 6. Para entender o servidor local, use [[MCP vscodeproject-context]] e [[Resources e Tools]].
+7. Em tarefas do `webtrans`, complemente a leitura com os resources
+   `context://webtrans/obsidian-vault`,
+   `context://webtrans/obsidian-routine-routing` e
+   `context://webtrans/obsidian-reasoning`.
 
 ## Notas principais
 

@@ -32,8 +32,21 @@ O MCP `vscodeproject-context` expoe recursos de contexto e ferramentas read-only
 
 - `context://webtrans/architecture`
 - `context://webtrans/agente-codex`
+- `context://webtrans/obsidian-vault`
+- `context://webtrans/obsidian-routine-routing`
+- `context://webtrans/obsidian-reasoning`
 
 Esses resources correspondem aos documentos obrigatorios do [[Webtrans]].
+
+## Resources de raciocinio do Obsidian WebTrans
+
+- `context://webtrans/obsidian-vault` -> mapa das pastas `Regras/`,
+  `Arquitetura/`, `Comandos/`, `Agentes/`, `Documentacao/` e
+  `Documentacao/Telas/`
+- `context://webtrans/obsidian-routine-routing` -> matriz de leitura por
+  rotina pedida
+- `context://webtrans/obsidian-reasoning` -> estrategia de raciocinio por tipo
+  de tarefa
 
 ## Tools expostas
 

@@ -1,28 +1,30 @@
-# Projeto: webtrans
+---
+tags:
+  - projeto
+  - webtrans
+  - obsidian
+  - rotina
+aliases:
+  - Webtrans por rotina
+  - Leitura por rotina do Webtrans
+---
 
-## Papel
+# Webtrans - Leitura por rotina
 
-Aplicacao Web Java EE principal do legado GW Sistemas, empacotada como WAR e executada em Tomcat. E o centro funcional do workspace.
+Use esta nota quando a rotina do `webtrans` estiver nomeada no pedido e for
+necessario decidir quais `.md` do cofre `Obsidian WebTrans` devem ser lidos
+antes de analisar o codigo.
 
-## Documentos obrigatorios
+## Base obrigatoria
 
-Antes de qualquer acao:
+Sempre ler primeiro:
 
 - `webtrans/ARCHITECTURE.md`
 - `webtrans/.github/agente-codex.md`
-
-## Leitura obrigatoria no Obsidian WebTrans
-
-Apos os documentos obrigatorios acima, toda analise de rotina do `webtrans` deve
-ler no minimo:
-
 - `webtrans/Obsidian WebTrans/Brain-WebTrans.md`
 - `webtrans/Obsidian WebTrans/Regras/00-Regras-Invariantes.md`
-- `context://webtrans/obsidian-vault`
-- `context://webtrans/obsidian-routine-routing`
-- `context://webtrans/obsidian-reasoning`
 
-Depois disso, abrir os `.md` da rotina pedida conforme o dominio funcional:
+## Mapa por rotina
 
 | Rotina pedida | Ler sempre |
 |---|---|
@@ -40,66 +42,35 @@ Depois disso, abrir os `.md` da rotina pedida conforme o dominio funcional:
 | Integracao externa, CIOT, PagBem, Sefaz, email, webservice, API externa | `webtrans/Obsidian WebTrans/Documentacao/09-integracoes-externas.md` |
 | Integracao GWeb x WebTrans, base compartilhada, comunicacao entre sistemas | `webtrans/Obsidian WebTrans/Documentacao/10-comunicacao-gweb-webtrans.md` |
 
-Complementos obrigatorios quando a rotina ainda estiver ambigua, muito
-regulatoria ou com nomenclatura confusa:
+## Complementos
+
+Ler tambem quando necessario:
 
 - `webtrans/Obsidian WebTrans/Documentacao/05-regras-de-negocio-consolidadas.md`
 - `webtrans/Obsidian WebTrans/Documentacao/06-glossario-do-sistema.md`
 - `webtrans/Obsidian WebTrans/Documentacao/07-pendencias-e-lacunas.md`
+- `webtrans/Obsidian WebTrans/Regras/01-Regras-DAO-Schema.md`,
+  `webtrans/Obsidian WebTrans/Regras/02-Regras-Java.md` e
+  `webtrans/Obsidian WebTrans/Regras/03-Regras-JSP.md`, se a rotina evoluir
+  para implementacao
 
-Regra de decisao:
+## Regra pratica
 
-1. Se a rotina bater com o nome de uma tela, abrir tambem o arquivo de `Telas/`
-   correspondente.
-2. Se a rotina envolver banco, view, funcao, trigger ou relacionamento, ignorar
-   partes do cofre que dependam de `mcp-postgres`/`postgres-readonly` quando
-   esse MCP nao estiver disponivel e seguir pelo SQL versionado em
-   `gw-base-webtrans` e pelo codigo consumidor no `webtrans`.
-3. Se a rotina envolver implementacao, reforcar com
-   `webtrans/Obsidian WebTrans/Regras/01-Regras-DAO-Schema.md`,
-   `webtrans/Obsidian WebTrans/Regras/02-Regras-Java.md` e
-   `webtrans/Obsidian WebTrans/Regras/03-Regras-JSP.md`, conforme a camada.
+1. Se o pedido nomear uma tela, consulta, listagem ou relatorio, abrir o `.md`
+   de `Documentacao/Telas/` correspondente alem do modulo funcional.
+2. Se o pedido nomear uma regra sem tela clara, abrir o `.md` do modulo
+   (`02-trans-rotinas`, `03-financeiro-rotinas` ou
+   `04-configuracoes-gerais-usuarios-filiais`) e completar com `05`, `06` e
+   `07` quando houver ambiguidade.
+3. Se houver parte do cofre que dependa de `mcp-postgres` ou
+   `postgres-readonly`, ignorar essa parte quando esse MCP nao estiver
+   disponivel e seguir por `gw-base-webtrans`, `web/WEB-INF/consultas/`,
+   `resources/report/` e pelo fluxo `Controlador -> BO -> DAO`.
+4. Se ainda restar duvida, usar `08-indice-para-obsidian.md` como mapa de
+   navegacao e continuar a leitura do cofre antes de entrar no codigo.
 
-## Arquitetura
+## Relacionados
 
-Padrao MVC Java EE:
-
-- JSP/JavaScript em `web/`;
-- servlets `*Controlador.java` roteando por parametro `acao`;
-- regras em `*BO.java`;
-- persistencia em `*DAO.java`;
-- SQL direto JDBC via classes base em `nucleo`.
-
-## Estrutura relevante
-
-- `src/java/`: fontes Java.
-- `src/java/nucleo/`: base legada, conexao, apoio, boleto, importacao, exportacao, webservice.
-- `src/java/br/com/gwsistemas/`: pacotes modernos.
-- `web/`: JSPs, JavaScript, assets e raiz web.
-- `web/WEB-INF/web.xml`: registro de servlets.
-- `web/WEB-INF/config.properties`: configuracao de ambiente.
-- `web/WEB-INF/consultas/`: XMLs de listagem `vw_listar_*.xml`.
-- `resources/report/`: fontes Jasper.
-- `gw-lib/`, `libs-exportadas/`, `libs-jasper/`: JARs de runtime/build.
-
-## Regras tecnicas
-
-- Java 8.
-- Encoding ISO-8859-1 em Java/JSP/XML.
-- Sem `@WebServlet`; registrar servlet no `web.xml`.
-- Retorno JSON via Gson.
-- Controladores usam `acao`.
-- Novos pacotes devem preferir `br.com.gwsistemas.<modulo>`.
-
-## Fluxo de investigacao
-
-1. Identificar URL/JSP/acao.
-2. Localizar servlet no `web.xml`.
-3. Seguir `Controlador -> BO -> DAO`.
-4. Verificar JSP e JavaScript se o bug for de tela.
-5. Se envolver biblioteca, provar qual JAR esta no runtime.
-
-## Validacao comum
-
-- `./gradlew compileJava` quando a alteracao for Java.
-- Validar Tomcat/runtime quando o problema pode estar em JAR, WAR explodido ou deploy.
+- [[Webtrans]]
+- [[Leitura obrigatoria]]
+- [[Mapa de conexoes]]

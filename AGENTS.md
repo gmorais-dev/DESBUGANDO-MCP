@@ -16,6 +16,7 @@ Regras obrigatorias:
 
 - Antes de qualquer acao no workspace, ler `preflight.md`.
 - Antes de qualquer acao no workspace, ler `webtrans/ARCHITECTURE.md` e `webtrans/.github/agente-codex.md`.
+- Em tarefas do `webtrans`, apos os documentos obrigatorios, ler tambem `webtrans/Obsidian WebTrans/Brain-WebTrans.md`, `webtrans/Obsidian WebTrans/Regras/00-Regras-Invariantes.md` e os `.md` da rotina pedida conforme o mapa em `projects/webtrans.md`.
 - Antes de qualquer acao em `gw-base-webtrans`, ler `gw-base-webtrans/AGENTS.md`.
 - Nao editar codigo de projeto sem autorizacao explicita quando a regra local exigir.
 - Preservar alteracoes locais existentes.

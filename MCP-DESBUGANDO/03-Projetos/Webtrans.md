@@ -19,6 +19,20 @@ Antes de qualquer acao:
 - `webtrans/ARCHITECTURE.md`
 - `webtrans/.github/agente-codex.md`
 
+## Leitura adicional por rotina
+
+Quando a tarefa nomear uma rotina do `webtrans`, o MCP-DESBUGANDO deve abrir
+tambem os `.md` do cofre `webtrans/Obsidian WebTrans` conforme o mapa em
+[[Webtrans - Leitura por rotina]].
+
+Base minima adicional:
+
+- `webtrans/Obsidian WebTrans/Brain-WebTrans.md`
+- `webtrans/Obsidian WebTrans/Regras/00-Regras-Invariantes.md`
+- `context://webtrans/obsidian-vault`
+- `context://webtrans/obsidian-routine-routing`
+- `context://webtrans/obsidian-reasoning`
+
 ## Arquitetura
 
 Padrao MVC Java EE:
@@ -74,3 +88,4 @@ JSP/JavaScript -> Controlador -> BO -> DAO -> PostgreSQL/JAR/runtime
 - [[Preflight obrigatorio]]
 - [[Regras operacionais]]
 - [[Workspace VsCodeProject]]
+- [[Webtrans - Leitura por rotina]]

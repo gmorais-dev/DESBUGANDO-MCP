@@ -9,6 +9,9 @@
   ],
   "project_contexts": [
     "projects/webtrans.md",
+    "projects/webtrans-obsidian-vault.md",
+    "projects/webtrans-obsidian-routine-routing.md",
+    "projects/webtrans-obsidian-reasoning.md",
     "projects/gw-base-webtrans.md",
     "projects/gw-boleto.md",
     "projects/gw-consulta-situacao.md",
